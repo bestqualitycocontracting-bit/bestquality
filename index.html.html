@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>شركة بيست كوالتي للمشاريع المتطورة المحدودة</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap">
+<style>
+:root{color-scheme:light;--navy:#0f1f5c;--green:#1b6b3a;--bg:#fbfdfc;--card:#fff;--ink:#14192e;--mute:#4d556b;--line:#d9e1dc;--hero-ink:#0f1f5c;--hero-mute:#3d4561;--hero-bg:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{font-family:'Cairo','Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+header{background:var(--hero-bg);color:var(--hero-ink);border-bottom:3px solid var(--navy);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:1.25rem;display:flex;gap:10px;align-items:center}
+.logo i{font-style:normal;font-family:Georgia,serif;background:var(--navy);color:#fff;border-radius:8px;padding:0 9px;line-height:1.5;direction:ltr}
+#lang{font:600 .9rem Cairo,sans-serif;background:transparent;color:var(--hero-ink);border:1.5px solid var(--hero-ink);border-radius:8px;padding:2px 14px;cursor:pointer;margin-inline-start:14px}#lang:hover{background:var(--hero-ink);color:var(--hero-bg)}#lang:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid #9fd8b5;outline-offset:2px}
+[dir=ltr] .hero .en,[dir=ltr] .contact .num{text-align:left}[dir=ltr] .mono{left:auto;right:-20px}
+nav a{color:var(--mute);text-decoration:none;margin-inline-start:18px;font-size:.95rem}
+nav a:hover{color:var(--green)}
+.hero{background:var(--hero-bg);color:var(--hero-ink);position:relative;overflow:hidden;padding:64px 0 120px}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:90px;background:var(--bg);clip-path:polygon(0 70%,45% 40%,100% 0,100% 100%,0 100%)}
+.hero::before{content:"";position:absolute;inset:auto 0 0 0;height:110px;background:var(--green);clip-path:polygon(0 80%,45% 52%,100% 14%,100% 100%,0 100%)}
+.hero h1{font-size:clamp(2rem,6vw,3.6rem);font-weight:800;line-height:1.3}
+.hero .en{font-family:Georgia,serif;letter-spacing:.06em;color:var(--green);margin:6px 0 18px;direction:ltr;text-align:right;font-size:1.1rem}
+.hero p{max-width:34rem;color:var(--hero-mute);font-size:1.1rem}
+.mono{position:absolute;left:-20px;top:10px;font:800 17rem/1 Georgia,serif;color:rgba(15,31,92,.05);direction:ltr;pointer-events:none}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px;position:relative;z-index:1}
+.btn{padding:11px 24px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.p{background:var(--navy);color:#fff}.btn.s{border:2px solid var(--hero-ink);color:var(--hero-ink)}
+section{padding:56px 0}
+h2{font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:6px}
+.sub{color:var(--mute);margin-bottom:28px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.svc{background:var(--card);border:1px solid var(--line);border-inline-start:5px solid var(--green);border-radius:14px;padding:24px}
+.svc svg{width:46px;height:46px;stroke:var(--green);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:8px}
+.svc h3{font-size:1.2rem;color:var(--navy)}
+.svc p{color:var(--mute);font-size:.98rem}
+.why{background:var(--card);color:var(--ink);border-block:1px solid var(--line)}
+.why h2{color:var(--navy)}.why .sub{color:var(--mute)}
+.why .grid div{border-top:3px solid #3fae6a;padding-top:14px}
+.why b{display:block;font-size:1.15rem}.why span{color:var(--mute);font-size:.95rem}
+.work{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 26px}
+.work li{list-style:none;padding:8px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}
+.work li:last-child{border:0}
+.work li::before{content:"✓";background:var(--green);color:#fff;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;font-size:.8rem;flex:none}
+.contact{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.contact a,.contact div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;color:var(--ink);text-decoration:none}
+.contact small{display:block;color:var(--mute)}
+.contact .num{font-weight:800;font-size:1.25rem;direction:ltr;text-align:right;display:block}
+footer{background:var(--card);border-top:1px solid var(--line);color:var(--mute);text-align:center;padding:22px 20px;font-size:.95rem}
+@media (max-width:640px){nav{display:none}.mono{font-size:10rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo"><i>BQ</i> <span data-en="Best Quality">بيست كوالتي</span></div>
+<nav><a data-en="Our Services" href="#services">مجالات العمل</a><a data-en="Why Us" href="#why">لماذا نحن</a><a data-en="Our Work" href="#work">أعمالنا</a><a data-en="Contact Us" href="#contact">تواصل معنا</a></nav><button id="lang" type="button" aria-label="Language">EN</button></div></header>
+
+<div class="hero"><div class="mono">BQ</div><div class="wrap" style="position:relative">
+<h1 data-en="Best Quality<br>Developed Projects Co. Ltd.">شركة بيست كوالتي<br>للمشاريع المتطورة المحدودة</h1>
+<div class="en">BEST QUALITY · DEVELOPED PROJECTS</div>
+<p data-en="General contracting and building maintenance, plus supply of construction materials and generators. Integrated solutions with high quality and lasting trust.">مقاولات عامة وصيانة مباني، وتوريد مواد البناء والمولدات. حلول متكاملة بجودة عالية وثقة تدوم.</p>
+<div class="btns"><a class="btn p" href="#contact" data-en="Request a quote">اطلب عرض سعر</a><a class="btn s" href="#services" data-en="Our Services">مجالات العمل</a></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2 data-en="Our Services">مجالات العمل</h2><p class="sub" data-en="Three services covering your project from construction to operation.">ثلاث خدمات تغطي احتياج مشروعك من البناء إلى التشغيل.</p>
+<div class="grid">
+<div class="svc"><svg viewBox="0 0 48 48"><path d="M8 42V14l14-6v34M22 42V20l18 6v16M4 42h40M13 18h4M13 25h4M13 32h4M28 29h6M28 35h6"/></svg><h3 data-en="General Contracting &amp; Building Maintenance">المقاولات العامة وصيانة المباني</h3><p data-en="All types of contracting and building maintenance, to the highest quality and safety standards.">تنفيذ جميع أنواع المقاولات وصيانة المباني بأعلى معايير الجودة والسلامة.</p></div>
+<div class="svc"><svg viewBox="0 0 48 48"><path d="M3 34V16h22v18M25 22h10l7 7v5H25M3 34h40"/><circle cx="12" cy="37" r="4"/><circle cx="34" cy="37" r="4"/></svg><h3 data-en="Construction Materials &amp; Generators Supply">توريد مواد البناء والمولدات</h3><p data-en="Supply of high-quality construction materials and generators in all types and sizes.">توريد جميع مواد البناء والمولدات عالية الجودة بمختلف الأنواع والمقاسات.</p></div>
+<div class="svc"><svg viewBox="0 0 48 48"><path d="M24 5l15 6v11c0 10-6 17-15 21C15 39 9 32 9 22V11z"/><path d="M24 17v14M19 20l5 4 5-4M18 27h12"/></svg><h3 data-en="Pest &amp; Insect Control">مكافحة الآفات والحشرات</h3><p data-en="Control services for all types of pests and insects using safe, effective methods.">خدمات مكافحة جميع أنواع الآفات والحشرات بطرق آمنة وفعّالة.</p></div>
+</div></div></section>
+
+<section id="why" class="why"><div class="wrap">
+<h2 data-en="Why Us?">لماذا نحن؟</h2><p class="sub" data-en="We deliver quality… build trust… shape the future.">نوفر الجودة… نبني الثقة… نصنع المستقبل.</p>
+<div class="grid">
+<div><b data-en="High Quality">جودة عالية</b><span data-en="We follow the highest quality standards in all our work and products.">نلتزم بأعلى معايير الجودة في جميع أعمالنا ومنتجاتنا.</span></div>
+<div><b data-en="On-Time Delivery">التزام بالمواعيد</b><span data-en="We deliver projects on schedule, without delay.">نسلّم المشاريع في الوقت المحدد ودون تأخير.</span></div>
+<div><b data-en="Safety &amp; Security">سلامة وأمان</b><span data-en="We apply the highest safety standards on all work sites.">نطبق أعلى معايير السلامة والأمان في جميع مواقع العمل.</span></div>
+<div><b data-en="Professional Team">فريق عمل محترف</b><span data-en="A specialized, experienced and capable team delivering the best solutions.">فريق متخصص ذو خبرة وكفاءة عالية لتقديم أفضل الحلول.</span></div>
+<div><b data-en="Trusted Partnerships">شراكات موثوقة</b><span data-en="Collaborations with major companies and institutions.">تعاونات مع كبرى الشركات والمؤسسات.</span></div>
+<div><b data-en="Customer Satisfaction">رضا العملاء</b><span data-en="We always strive for the best and earn our clients’ satisfaction.">نسعى دائمًا لتحقيق الأفضل ونحقق رضا عملائنا.</span></div>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<h2 data-en="Our Work">من أعمالنا</h2><p class="sub" data-en="We have built a number of private buildings to high quality standards and on time.">نفّذنا عددًا من المباني الخاصة بمعايير عالية الجودة وفي الوقت المحدد.</p>
+<ul class="work">
+<li data-en="Supplied Al-Rowad Real Estate Development Company">تم التوريد لشركة الرواد للتطوير العقاري</li>
+<li data-en="Supplied Royal Building Real Estate Development Company">تم التوريد لشركة رويال بيلدنق للتطوير العقاري</li>
+<li data-en="and other companies">وشركات أخرى</li>
+</ul></div></section>
+
+<section id="contact"><div class="wrap">
+<h2 data-en="Contact Us">تواصل معنا</h2><p class="sub" data-en="We are committed to building successful partnerships and being part of your projects’ success.">نلتزم ببناء شراكات ناجحة ونكون جزءًا من نجاح مشاريعكم.</p>
+<div class="contact">
+<a href="tel:+249912132174"><small data-en="Call">اتصال</small><span class="num">+249 912 132 174</span></a>
+<a href="tel:+249112211343"><small data-en="Call">اتصال</small><span class="num">+249 112 211 343</span></a>
+<a href="tel:+249123357106"><small data-en="Call">اتصال</small><span class="num">+249 123 357 106</span></a>
+<a href="mailto:bestqualitycocontracting@gmail.com"><small data-en="Email">البريد الإلكتروني</small><span class="num" style="font-size:1rem;word-break:break-all">bestqualitycocontracting@gmail.com</span></a>
+<div><small data-en="Address">العنوان</small><span data-en="Khartoum 3, west of Al-Qurashi Park, northwest of Sudatel">الخرطوم 3 غرب حديقة القرشي، شمال غرب سوداتيل</span></div>
+</div></div></section>
+
+<footer data-en="© Best Quality Developed Projects Co. Ltd.">© شركة بيست كوالتي للمشاريع المتطورة المحدودة</footer>
+<script>
+(function(){var els=document.querySelectorAll('[data-en]'),btn=document.getElementById('lang'),h=document.documentElement;
+els.forEach(function(e){e.setAttribute('data-ar',e.innerHTML)});
+function set(l){var en=l==='en';h.lang=en?'en':'ar';h.dir=en?'ltr':'rtl';
+els.forEach(function(e){e.innerHTML=e.getAttribute(en?'data-en':'data-ar')});
+btn.textContent=en?'عربي':'EN';document.title=en?'Best Quality Developed Projects Co. Ltd.':'شركة بيست كوالتي للمشاريع المتطورة المحدودة';
+try{localStorage.setItem('bq-lang',l)}catch(e){}}
+btn.addEventListener('click',function(){set(h.lang==='en'?'ar':'en')});
+try{if(localStorage.getItem('bq-lang')==='en')set('en')}catch(e){}})();
+</script>
+</body>
+</html>
